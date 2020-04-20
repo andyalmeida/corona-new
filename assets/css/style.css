@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  color: #121212;
+}
+
+input, textarea, button {
+  font-family: 'Open Sans', sans-serif;
+  color: #121212;
+  font-size: 16px;
+}
+
+audio, input:focus, textarea:focus, button:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+nav {
+  width: 50px;
+  height: 100vh;
+  margin: 120px 16px 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav img {
+  width: 50px;
+  position: fixed;
+  margin-left: -25px;
+}
+
+nav ul {
+  position: fixed;
+  margin-top: 100px;
+  list-style: none;
+}
+
+nav i {
+  font-size: 24px;
+  color: #cdcdcd; color: #f072816b;
+  margin-bottom: 40px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav i:hover {
+  color: #121212; color: #eb5569;
+}
+
+main {
+  width: 1560px;
+  margin: 65px auto 0 8px;
+}
+
+.hero {
+  width: 1560px;
+  height: 570px;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)), url(../img/corona-bg.jpg);
+  background-attachment: scroll, fixed;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 0 60px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: 600;
+  padding-top: 330px;
+}
+
+.hero h2 {
+  font-size: 40px;
+  font-weight: 200;
+}
+
+section {
+  height: 100vh;
+  margin-top: 25px;
+  padding: 50px;
+}
+
+section > h2 {
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.news {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.news .card-news {
+  width: 360px;
+  height: 430px;
+}
+
+.news .card-news header {
+  width: 360px;
+  height: 240px;
+  position: relative;
+}
+
+.card-news p {
+  font-size: 16px;
+  line-height: 25px;
+  color: #616161;
+  padding: 10px 30px;
+}
+
+.news .card-pod {
+  width: 360px;
+  height: 430px;
+}
+
+.news .card-pod header {
+  width: 360px;
+  height: 360px;
+  position: relative;
+}
+
+.news .card-pod audio {
+  width: 360px;
+  margin-top: 10px;
+}
+
+.news .card-vid  {
+  width: 750px;
+  height: 430px;
+  position: relative;
+}
+
+.news i {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.news i.fa-play-circle {
+  font-size: 100px;
+}
+
+.news i.fa-headphones {
+  font-size: 60px;
+}
+
+.news h3 {
+  color: #fff;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 0 200px;
+  position: absolute;
+  bottom: 20px;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.74);
+}
+
+.news h4 {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  width: 60%;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.74);
+}
+
+.news img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  filter: brightness(70%);
+}
+
+#about > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#about > div img {
+  width: 250px;
+  height: 250px;
+  margin-right: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+#about > div p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+#about > div a {
+  color: inherit;
+  font-size: 35px;
+  transition: color 0.3s ease-in-out;
+}
+
+#about > div a:hover {
+  color: #0073b1;
+}
+
+#contact p {
+  margin-bottom: 30px;
+}
+
+#contact input, 
+#contact textarea {
+  width: 75%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px 16px;
+  margin-bottom: 20px;
+}
+
+#contact input:focus, 
+#contact textarea:focus {
+  border-color: #f072816b;
+}
+
+#contact textarea {
+  height: 30vh;
+}
+
+#contact button {
+  display: block;
+  color: #fff;
+  font-weight: 700;
+  padding: 20px 16px;
+  border-radius: 8px;
+  background-color: #eb5569;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#contact button:hover {
+  background-color: #c24e5d;
+}
+
+
+#know-more ul {
+  list-style: none;
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#know-more li p {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+#know-more li img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center center;
+  box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.1);
+  transition: all 0.5s ease-in-out;
+}
+
+#know-more li img:hover {
+  width: 220px;
+  height: 220px;
+}
